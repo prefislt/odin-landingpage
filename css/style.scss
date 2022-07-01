@@ -1,4 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: white;
+    padding: 20px 200px 100px 200px;
+
+    .logo {
+        font-size: 20pt;
+        font-weight: 700;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 100px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.25s ease-in-out;
+                }
+                a:hover {
+                    color:#96a8c1;
+                }
+            }
+        }
+    }
+
+    .welcome {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .welcome-msg {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            gap: 20px;
+            max-width: 500px;
+            .headline {
+                font-size: 24pt;
+                font-weight: 700;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 50px;
+                text-decoration: none;
+                color: white;
+                font-weight: 700;
+                background-color: #3882F6;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                transition: 0.1s ease-in-out;
+            }
+            a:hover {
+                background-color: #2f6ed3;
+            }
+            a:active {
+                background-color: #2f6ed3;
+                box-shadow: inset 0 0 5px #000000;
+            }
+        }
+
+        .picture {
+            max-width: 400px;
+
+            img {
+                max-width:100%;
+
+            }
+        }
+    }
+
+
+
+
+
+
+
+
 }
