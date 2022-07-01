@@ -84,4 +84,36 @@ header .welcome .picture {
 }
 header .welcome .picture img {
   max-width: 100%;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 200px 100px 200px;
+}
+.content .headline {
+  font-size: 20pt;
+  font-weight: 700;
+}
+.content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.content ul li img {
+  width: 200px;
+  padding: 10px;
+  /* border: 5px solid #2f6ed3; */
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
