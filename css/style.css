@@ -192,9 +192,17 @@ header .hcontainer .welcome .picture img {
   width: 80px;
   height: 20px;
   line-height: 20px;
-  border: 3px solid;
+  border: 3px solid #fff;
   border-radius: 5px;
   padding: 10px 20px 10px 20px;
+  transition: 0.25s ease-in-out;
+}
+.cta .cta-box .cta-button a:hover {
+  background-color: #2f6ed3;
+}
+.cta .cta-box .cta-button a:active {
+  background-color: #2f6ed3;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 footer {
