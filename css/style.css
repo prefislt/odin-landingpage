@@ -169,7 +169,7 @@ header .hcontainer .welcome .picture img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
   padding: 0 100px 0 100px;
   width: 1000px;
   height: 150px;
@@ -194,6 +194,7 @@ header .hcontainer .welcome .picture img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-shrink: 0;
 }
 .cta .cta-box .cta-button a {
   text-decoration: none;
@@ -221,4 +222,117 @@ footer {
   color: #e5e7eb;
   padding: 50px 0 50px 0;
   background-color: #1F2937;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  header .hcontainer {
+    -webkit-animation: fadein 1s;
+            animation: fadein 1s;
+  }
+  header .hcontainer .welcome {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .content .images ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content .images ul li {
+    max-width: 250px;
+  }
+
+  .quote {
+    padding: 100px;
+  }
+  .quote .qcontainer p:nth-child(1) {
+    font-size: 20pt;
+  }
+  .quote .qcontainer p:nth-child(2) {
+    font-size: 16pt;
+  }
+
+  .cta .cta-box {
+    margin: 0 100px 0 100px;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .cta .cta-box {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 180px;
+  }
+  .cta .cta-box .cta-text {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 550px) {
+  header {
+    padding: 40px 0 0 0;
+  }
+  header .hcontainer .navigation {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+  header .hcontainer .welcome {
+    padding: 40px;
+  }
+  header .hcontainer .welcome .picture {
+    width: 100%;
+  }
+
+  .content {
+    padding: 40px;
+  }
+  .content .headline {
+    text-align: center;
+  }
+
+  .quote {
+    padding: 40px;
+  }
+  .quote .qcontainer p:nth-child(1) {
+    font-size: 16pt;
+  }
+  .quote .qcontainer p:nth-child(2) {
+    font-size: 12pt;
+  }
+
+  .cta .cta-box {
+    padding: 10px;
+    margin: 0 40px 0 40px;
+    width: 600px;
+    height: 200px;
+  }
+  .cta .cta-box .cta-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cta .cta-box .cta-text .title {
+    font-size: 14pt;
+  }
+  .cta .cta-box .cta-text .undertext {
+    text-align: center;
+    font-size: 10pt;
+  }
 }/*# sourceMappingURL=style.css.map */
