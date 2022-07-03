@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,52 +12,57 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #1F2937;
   color: white;
-  padding: 20px 200px 100px 200px;
+  padding: 20px 0 100px 0;
 }
-header .logo {
+header .hcontainer {
+  max-width: 1100px;
+}
+header .hcontainer .logo {
   font-size: 20pt;
   font-weight: 700;
 }
-header .navigation {
+header .hcontainer .navigation {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 100px;
 }
-header .navigation ul {
+header .hcontainer .navigation ul {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-header .navigation ul li a {
+header .hcontainer .navigation ul li a {
   text-decoration: none;
   color: white;
   transition: 0.25s ease-in-out;
 }
-header .navigation ul li a:hover {
+header .hcontainer .navigation ul li a:hover {
   color: #96a8c1;
 }
-header .welcome {
+header .hcontainer .welcome {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  gap: 100px;
 }
-header .welcome .welcome-msg {
+header .hcontainer .welcome .welcome-msg {
   display: flex;
   flex-direction: column;
   justify-content: left;
   gap: 20px;
   max-width: 500px;
 }
-header .welcome .welcome-msg .headline {
+header .hcontainer .welcome .welcome-msg .headline {
   font-size: 24pt;
   font-weight: 700;
 }
-header .welcome .welcome-msg a {
+header .hcontainer .welcome .welcome-msg a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,17 +77,17 @@ header .welcome .welcome-msg a {
   cursor: pointer;
   transition: 0.1s ease-in-out;
 }
-header .welcome .welcome-msg a:hover {
+header .hcontainer .welcome .welcome-msg a:hover {
   background-color: #2f6ed3;
 }
-header .welcome .welcome-msg a:active {
+header .hcontainer .welcome .welcome-msg a:active {
   background-color: #2f6ed3;
   box-shadow: inset 0 0 5px #000000;
 }
-header .welcome .picture {
+header .hcontainer .welcome .picture {
   max-width: 400px;
 }
-header .welcome .picture img {
+header .hcontainer .welcome .picture img {
   max-width: 100%;
   border-radius: 5px;
 }
@@ -90,30 +95,53 @@ header .welcome .picture img {
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 50px;
-  padding: 50px 200px 100px 200px;
+  padding: 50px 0 100px 0;
+  max-width: 1000px;
+  margin: auto;
 }
 .content .headline {
   font-size: 20pt;
   font-weight: 700;
 }
-.content ul {
+.content .images ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.content ul li {
+.content .images ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   text-align: center;
 }
-.content ul li img {
+.content .images ul li img {
   width: 200px;
   padding: 10px;
   /* border: 5px solid #2f6ed3; */
   border-radius: 10px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 100px 0 100px 0;
+}
+.quote .qcontainer {
+  max-width: 800px;
+  margin: auto;
+}
+.quote .qcontainer p:nth-child(1) {
+  font-size: 24pt;
+  font-style: italic;
+  font-weight: 300;
+}
+.quote .qcontainer p:nth-child(2) {
+  font-size: 20pt;
+  font-style: italic;
+  font-weight: 700;
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
