@@ -172,3 +172,53 @@ header {
 
 
 }
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 100px 0;
+    color: white;
+
+    .cta-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0 100px 0 100px;
+        width: 900px;
+        height: 150px;
+        background-color:#3882F6;
+        border-radius: 5px;
+
+        .cta-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title {
+                font-weight: 700;
+                font-size: 16pt;
+            }
+            .undertext {
+                font-size: 10pt;
+            }
+        }
+    
+        .cta-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: white;
+                width: 80px;
+                height: 20px;
+                line-height: 20px;
+                border: 3px solid;
+                border-radius: 5px;
+                padding: 10px 20px 10px 20px;
+            }
+        }
+    }
+}
