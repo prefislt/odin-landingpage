@@ -91,6 +91,9 @@ header {
                     background-color: #2f6ed3;
                     box-shadow: inset 0 0 5px #000000;
                 }
+                p {
+                    color: #e5e7eb;
+                }
             }
     
             .picture {
@@ -186,10 +189,11 @@ header {
         justify-content: space-between;
         gap: 10px;
         padding: 0 100px 0 100px;
-        width: 900px;
+        width: 1000px;
         height: 150px;
         background-color:#3882F6;
         border-radius: 5px;
+        box-sizing: border-box;
 
         .cta-text {
             display: flex;
@@ -221,4 +225,13 @@ header {
             }
         }
     }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e7eb;
+    padding: 50px 0 50px 0;
+    background-color: #1F2937;
 }
