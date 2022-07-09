@@ -1,6 +1,6 @@
 # HTML landing page template
 
-Coded from scratch following <a href="https://www.theodinproject.com/lessons/foundations-landing-page">The Odin Project</a> design. [<a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/project/odin-project.png"> 1 </a> | <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/project/odin-project.png"> 2 </a>]
+Coded from scratch following <a href="https://www.theodinproject.com/lessons/foundations-landing-page">The Odin Project</a> design. [<a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/project/odin-project.png"> 1 </a> | <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/project/colors_and_stuff.png"> 2 </a>]
 
 <b><a href="https://prefislt.github.io/odin-landingpage/" target="_blank">Live preview</a></b>
 
